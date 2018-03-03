@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>SammyWright's calculator</title>
+		<script type="text/javascript" src="methods.js">
+		</script>
+		<style type="text/css">
+			body{
+				background : url('images/brick.jpg') no-repeat;
+				background-attachment: fixed;
+				background-size: cover;
+			}
+		</style>
+	</head>
+	<body>
+		<center>
+		
+		<h1 style="font-size:70px">SammyWright's Calculator</h1>
+		
+		<hr style="size:2S0px;color:black;border-radius:6px">
+		<form name="Calculator" id="inp" style="background-color:brown;border-radius:20px; width:480px"><br>
+			<input type="text" placeholder="0" name="display" style="font-size:30px;border-radius:8px;height:60px;width:396px;margin:3px;text-align:right"
+			<br><br>
+			<input type="button" value="sin" onclick="dec('sin');" style="font-size:30px;width:76px;height:60px;border-radius:8px;margin:3px" />
+			<input type="button" value="cos" onclick="dec('cos');" style="font-size:30px;width:76px;height:60px;border-radius:8px" />
+			<input type="button" value="tan" onclick="dec('tan');" style="font-size:30px;width:76px;height:60px;border-radius:8px" />
+			<input type="button" value="e" onclick="dec('e');" style="font-size:30px;width:76px;height:60px;border-radius:8px" />
+			<input type="button" value="^" onclick="dec('^');" style="font-size:30px;width:76px;height:60px;border-radius:8px" />
+			<br>
+			<input type="button" value="7" onclick="dec('7');" style="font-size:30px;width:76px;height:60px;border-radius:8px;margin:3px" />
+			<input type="button" value="8" onclick="dec('8');" style="font-size:30px;width:76px;height:60px;border-radius:8px" />
+			<input type="button" value="9" onclick="dec('9');" style="font-size:30px;width:76px;height:60px;border-radius:8px" />
+			<input type="button" value="√" onclick="dec('√');" style="font-size:30px;width:76px;height:60px;border-radius:8px" />
+			<input type="button" value="/" onclick="dec('/');" style="font-size:30px;width:76px;height:60px;border-radius:8px" />
+			<br>
+			<input type="button" value="4" onclick="dec('4');" style="font-size:30px;width:76px;height:60px;border-radius:8px;margin:3px" />
+			<input type="button" value="5" onclick="dec('5');" style="font-size:30px;width:76px;height:60px;border-radius:8px" />
+			<input type="button" value="6" onclick="dec('6');" style="font-size:30px;width:76px;height:60px;border-radius:8px" />
+			<input type="button" name="bracket" value="(" onclick="brack(); " style="font-size:30px;width:76px;height:60px;border-radius:8px" />
+			<input type="button" value="*" onclick="dec('*');'*'" style="font-size:30px;width:76px;height:60px;border-radius:8px" />
+			<br>
+			<input type="button" value="1" onclick="dec('1');" style="font-size:30px;width:76px;height:60px;border-radius:8px;margin:3px" />
+			<input type="button" value="2" onclick="dec('2');" style="font-size:30px;width:76px;height:60px;border-radius:8px" />
+			<input type="button" value="3" onclick="dec('3');" style="font-size:30px;width:76px;height:60px;border-radius:8px" />
+			<input type="button" value="log" onclick="dec('log');" style="font-size:30px;width:76px;height:60px;border-radius:8px" />
+			<input type="button" value="-" onclick="dec('-');" style="font-size:30px;width:76px;height:60px;border-radius:8px" />
+			<br>
+			<input type="button" value="0" onclick="dec('0');" style="font-size:30px;width:76px;height:60px;border-radius:8px;margin:3px" />
+			<input type="button" value="." onclick="dec('.');" style="font-size:30px;width:76px;height:60px;border-radius:8px" />
+			<input type="button" value="%" onclick="dec('%');" style="font-size:30px;width:76px;height:60px;border-radius:8px" />
+			<input type="button" value="ln" onclick="dec('ln');" style="font-size:30px;width:76px;height:60px;border-radius:8px" />
+			<input type="button" value="+" onclick="dec('+');" style="font-style:bold;font-size:45px;width:76px;height:65px;border-radius:8px" />
+			<br>
+			<input type="button" value="del" onclick="del();" style="font-size:30px;width:128px;height:60px;border-radius:8px;color:red;;margin:3px" />
+			<input type="button" value="=" onclick="equal();" style="font-size:30px;width:128px;height:60px;border-radius:8px;color:blue" />
+			<input type="button" value="clr" onclick="clr();" style="font-size:30px;width:128px;height:60px;border-radius:8px" />
+			<br><br>
+			
+		</form>
+		
+		</center>
+	</body>
+</html>

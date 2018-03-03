@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>SammyWright's form</title>
+		<script type="text/javascript">
+			function confirm(a,b,c){
+				a = document.getElementById(a).value;
+				if(!a ==""){
+					document.getElementById(b).style.display = 'block';
+					document.getElementById(c).style.display = 'block';
+					document.getElementById(c).focus();
+				}
+			}
+		</script>
+		<style type="text/css">
+			input{
+				height: 50px;
+				width : 250px;
+				border-radius: 8px;
+				font-size: 35px;
+				text-align: center;
+				margin: 10px;
+			}
+			label{
+				height: 60px;
+				font-size: 40px;
+				color : black;
+			}
+			.body{
+				background : url('images/pebble.jpg') no-repeat;
+				background-attachment: fixed;
+				background-size: cover;
+				border-radius : 14px;
+			}
+		</style>
+		<body>
+			<div class="body" style="margin-top:0px;height:150px;width:100%;border-radius:10px">
+				<h1 style="font-size:70px;color:"><i>Fill the form below</i>
+			</div>
+			<div style="background-color : brown">
+			<center>
+				<table>
+					<tr>
+						<td><label> Firstname </label></td>
+						<td><input id="fname" onchange="confirm('fname','lm','mname');"/></td>
+					</tr>
+					<tr >
+						<td><label id="lm" hidden> Middlename </label></td>
+						<td><input id="mname" onchange="confirm('mname','ll','lname');" hidden/></td>
+					</tr>
+					<tr>
+						<td><label id="ll" hidden> Lastname </label></td>
+						<td><input id="lname" onchange="confirm('lname','lmn','mdname')" hidden/></td>
+					</tr>
+					<tr>
+						<td><label id="lmn" hidden> Maidenname </label></td>
+						<td><input id="mdname" onchange="confirm('mdname','ln','nation')" hidden/></td>
+					</tr>
+					<tr>
+						<td><label id="ln" hidden> Nationality </label></td>
+						<td><input id="nation" onchange="confirm('nation','ls','SoO')" hidden/></td>
+					</tr>
+					<tr>
+						<td><label id="ls" hidden> State of Origin </label></td>
+						<td><input id="SoO" onchange="confirm('SoO','lst','status')" hidden/></td>
+					</tr>
+					<tr>
+						<td><label id="lst" hidden> Status </label></td>
+						<td><input id="status" onchange="confirm('status','la','addr')" hidden/></td>
+					</tr>
+					<tr>
+						<td><label id="la" hidden> Address </label></td>
+						<td><input id="addr" onchange="confirm('addr','li','institute')" hidden/></td>
+					</tr>
+					<tr>
+						<td><label id="li" hidden> Instituition </label></td>
+						<td><input id="institute" onchange="confirm('institute','lr','rel')" hidden/></td>
+					</tr>
+					<tr>
+						<td><label id="lr" hidden> Relationship </label></td>
+						<td><input id="rel"  hidden/></td>
+					</tr>
+				</table>
+			</div>
+			</center>
+		</body>
+	</head>
+</html>
